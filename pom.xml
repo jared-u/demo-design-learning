@@ -43,6 +43,7 @@
         <module>demo-design-13-02</module>
         <module>demo-design-14-01</module>
         <module>demo-design-14-02</module>
+        <module>demo-design-15-00</module>
     </modules>
 
     <dependencies>
