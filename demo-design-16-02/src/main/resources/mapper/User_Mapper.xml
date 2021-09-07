@@ -1,0 +1,15 @@
+<mapper namespace="com.jared.design.dao.IUserDao">
+
+    <select id="queryUserInfoById" parameterType="java.lang.Long" resultType="com.jared.design.po.User">
+        SELECT id, name, age, createTime, updateTime
+        FROM user
+        where id = #{id}
+    </select>
+
+    <select id="queryUserList" parameterType="com.jared.design.po.User" resultType="com.jared.design.po.User">
+        SELECT id, name, age, createTime, updateTime
+        FROM user
+        where age = #{age}
+    </select>
+
+</mapper>
